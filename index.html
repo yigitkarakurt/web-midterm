@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>EcoBank</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#accounts">Hesaplarım</a></li>
+                <li><a href="#transactions">İşlemler</a></li>
+                <li><a href="#campaigns">Kampanyalar</a></li>
+                <li><a href="#exchange">Döviz</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="https://avatars.githubusercontent.com/u/73107549?v=4" alt="Profil Foto" class="profile-pic">
+                <span>Hoşgeldiniz, Yiğit Karakurt</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <!-- Sol Sidebar -->
+            <aside class="left-sidebar">
+                <div class="quick-actions">
+                    <h3>Hızlı İşlemler</h3>
+                    <ul>
+                        <li><i class="fas fa-receipt"></i> Son İşlemler</li>
+                        <li><i class="fas fa-star"></i> Favoriler</li>
+                        <li><i class="fas fa-bell"></i> Bildirimler</li>
+                        <li><i class="fas fa-cog"></i> Ayarlar</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Ana İçerik -->
+            <div class="main-content">
+                <section id="home" class="hero-section">
+                    <h1>Dijital Bankacılığın Geleceği</h1>
+                    <p>EcoBank ile finansal işlemlerinizi güvenle yönetin</p>
+                </section>
+
+                <section id="accounts" class="accounts-section">
+                    <h2>Hesaplarım</h2>
+                    <div class="account-cards">
+                        <div class="account-card">
+                            <h3>Vadesiz Hesap</h3>
+                            <p class="balance">₺23,416.90</p>
+                            <p class="account-number">TR45 0006 1005 1234 5678 9012 34</p>
+                            <div class="card-actions">
+                                <button class="transaction-btn">Detaylar</button>
+                                <button class="transaction-btn">Para Transferi</button>
+                            </div>
+                        </div>
+                        <div class="account-card">
+                            <h3>Dolar Hesabı</h3>
+                            <p class="balance">$12,450.64</p>
+                            <p class="account-number">TR45 0006 1005 1234 5678 9012 35</p>
+                            <div class="card-actions">
+                                <button class="transaction-btn">Detaylar</button>
+                                <button class="transaction-btn">Para Transferi</button>
+                            </div>
+                        </div>
+                        <div class="account-card">
+                            <h3>Euro Hesabı</h3>
+                            <p class="balance">€1,725.43</p>
+                            <p class="account-number">TR45 0006 1005 1234 5678 9012 36</p>
+                            <div class="card-actions">
+                                <button class="transaction-btn">Detaylar</button>
+                                <button class="transaction-btn">Para Transferi</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="transactions" class="quick-transactions">
+                    <h2>Hızlı İşlemler</h2>
+                    <div class="transaction-buttons">
+                        <button class="transaction-btn">
+                            <i class="fas fa-exchange-alt"></i>
+                            Para Transferi
+                        </button>
+                        <button class="transaction-btn">
+                            <i class="fas fa-credit-card"></i>
+                            Ödemeler
+                        </button>
+                        <button class="transaction-btn">
+                            <i class="fas fa-mobile-alt"></i>
+                            Cep Bank
+                        </button>
+                        <button class="transaction-btn">
+                            <i class="fas fa-donate"></i>
+                            Yatırım
+                        </button>
+                        <button class="transaction-btn">
+                            <i class="fas fa-university"></i>
+                            Krediler
+                        </button>
+                        <button class="transaction-btn">
+                            <i class="fas fa-piggy-bank"></i>
+                            Vadeli Hesap
+                        </button>
+                    </div>
+                </section>
+
+                <section id="campaigns" class="campaigns-section">
+                    <h2>Size Özel Kampanyalar</h2>
+                    <div class="campaign-cards">
+                        <div class="campaign-card">
+                            <div class="campaign-image">
+                                <img src="https://www.denizbank.com/medium/Campaign-LandingImage-1962.vsf" alt="Kredi Kampanyası">
+                            </div>
+                            <div class="campaign-content">
+                                <h3>Yeni Müşteri Kredisi</h3>
+                                <p>İlk kredinizde %0 faiz fırsatı!</p>
+                                <ul>
+                                    <li>12 aya varan vade</li>
+                                    <li>50.000 TL'ye kadar limit</li>
+                                    <li>Masrafsız kullanım</li>
+                                </ul>
+                                <button class="campaign-btn">Hemen Başvur</button>
+                            </div>
+                        </div>
+                        <div class="campaign-card">
+                            <div class="campaign-image">
+                                <img src="https://www.worldcard.com.tr/getmedia/708d42cc-36dd-4259-a611-8167ec35458c/1125X633-ozdilekbanka.png?width=1125&height=633&ext=.png" alt="Kart Kampanyası">
+                            </div>
+                            <div class="campaign-content">
+                                <h3>Kredi Kartı Fırsatı</h3>
+                                <p>12 taksit yerine 18 taksit!</p>
+                                <ul>
+                                    <li>Seçili kategorilerde geçerli</li>
+                                    <li>Yıllık kart ücreti yok</li>
+                                    <li>Chip-para kazanma fırsatı</li>
+                                </ul>
+                                <button class="campaign-btn">Detayları İncele</button>
+                            </div>
+                        </div>
+                        <div class="campaign-card">
+                            <div class="campaign-image">
+                                <img src="https://www.worldcard.com.tr/getmedia/83b020ac-9444-48e8-9287-50f79b170c09/31067-f298885a-b3da-42aa-8093-080a9ad4a9af.png?ext=.png-2x-webp.vsf" alt="Mevduat Kampanyası">
+                            </div>
+                            <div class="campaign-content">
+                                <h3>Vadeli Mevduat</h3>
+                                <p>%30'a varan faiz oranları!</p>
+                                <ul>
+                                    <li>3 ay vade seçeneği</li>
+                                    <li>Minimum 10.000 TL</li>
+                                    <li>Erken bozma imkanı</li>
+                                </ul>
+                                <button class="campaign-btn">Hesap Aç</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="exchange" class="exchange-rates">
+                    <h2>Güncel Kurlar</h2>
+                    <div class="rate-cards">
+                        <div class="rate-card">
+                            <h3>USD/TRY</h3>
+                            <p class="rate">31.45</p>
+                            <p class="change positive">+0.15%</p>
+                        </div>
+                        <div class="rate-card">
+                            <h3>EUR/TRY</h3>
+                            <p class="rate">33.80</p>
+                            <p class="change negative">-0.08%</p>
+                        </div>
+                        <div class="rate-card">
+                            <h3>GBP/TRY</h3>
+                            <p class="rate">39.25</p>
+                            <p class="change positive">+0.22%</p>
+                        </div>
+                        <div class="rate-card">
+                            <h3>BTC/USD</h3>
+                            <p class="rate">64,530</p>
+                            <p class="change positive">+1.45%</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sağ Sidebar -->
+            <aside class="right-sidebar">
+                <div class="profile-section">
+                    <div class="profile-header">
+                        <img src="https://avatars.githubusercontent.com/u/73107549?v=4" alt="Profil Foto" class="large-profile-pic">
+                        <h3>Yiğit Karakurt</h3>
+                        <p>Müşteri No: 1559126</p>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Toplam Varlık</span>
+                            <span class="stat-value">₺23,416.90</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Aktif Hesap</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Kredi Kartı</span>
+                            <span class="stat-value">2</span>
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="transaction-btn">Profili Düzenle</button>
+                        <button class="transaction-btn">Güvenlik Ayarları</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div id="contact" class="contact-section">
+            <h2 class="contact-form-container">Bize Ulaşın</h2>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <select name="subject" class="form-control">
+                        <option value="">Konu Seçiniz</option>
+                        <option value="general">Genel Bilgi</option>
+                        <option value="technical">Teknik Destek</option>
+                        <option value="complaint">Şikayet</option>
+                    </select>
+                    <textarea name="message" class="form-control" rows="5" placeholder="Mesajınız"></textarea>
+                    <button type="submit" class="transaction-btn">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>EcoBank</h4>
+                <p>Sürdürülebilir bankacılığın öncüsü</p>
+                <p>BDDK tarafından denetlenmektedir</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        0850 123 45 67
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        info@ecobank.com
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Merkez Mah. Bankacılar Cad. No:1 İstanbul
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#accounts">Hesaplarım</a></li>
+                    <li><a href="#transactions">İşlemler</a></li>
+                    <li><a href="#campaigns">Kampanyalar</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Yasal</h4>
+                <ul>
+                    <li><a href="#">Gizlilik Politikası</a></li>
+                    <li><a href="#">Kullanım Koşulları</a></li>
+                    <li><a href="#">KVKK</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© 2024 EcoBank. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
