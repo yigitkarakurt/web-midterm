@@ -2,20 +2,25 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <!-- Belge karakter seti olarak UTF-8 kullanılıyor. Bu, Türkçe karakterlerin doğru görüntülenmesini sağlar. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaBank</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Mobil cihazlarda düzgün görüntüleme için viewport ayarı. -->
+    <title>NovaBank</title>   <!-- Sayfanın başlığı. Tarayıcı sekmesinde görünen metin. -->
+    <link rel="stylesheet" href="style.css">  <!-- Sayfanın stil dosyasına bağlantı. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">     <!-- Font Awesome kütüphanesi, ikonlar için kullanılıyor. -->
 </head>
 <body>
     <header>
+        <!-- Sayfanın üst kısmındaki başlık bölümü -->
         <nav>
+            <!-- Navigasyon menüsü -->
             <div class="logo">
-                <i class="fas fa-leaf"></i>
+                <i class="fas fa-leaf"></i> <!-- Font Awesome'dan bir ikon -->
                 <span>NovaBank</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Ana Sayfa</a></li>
+                <!-- Navigasyon bağlantılarının listesi -->
+                <li><a href="#home">Ana Sayfa</a></li> <!-- Sayfanın farklı bölümlerine bağlantılar -->
                 <li><a href="#accounts">Hesaplarım</a></li>
                 <li><a href="#transactions">İşlemler</a></li>
                 <li><a href="#campaigns">Kampanyalar</a></li>
@@ -23,20 +28,23 @@
                 <li><a href="#contact">İletişim</a></li>
             </ul>
             <div class="user-info">
+                <!-- Kullanıcı bilgilerini içeren bölüm -->
                 <img src="https://avatars.githubusercontent.com/u/73107549?v=4" alt="Profil Foto" class="profile-pic">
+                <!-- Kullanıcının profil resmi -->
                 <span>Hoşgeldiniz, Yiğit Karakurt</span>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Sayfanın ana içeriği -->
         <div class="dashboard-container">
             <!-- Sol Sidebar -->
             <aside class="left-sidebar">
                 <div class="quick-actions">
                     <h3>Hızlı İşlemler</h3>
                     <ul>
-                        <li><i class="fas fa-receipt"></i> Son İşlemler</li>
+                        <li><i class="fas fa-receipt"></i> Son İşlemler</li> <!-- İkon ve metin -->
                         <li><i class="fas fa-star"></i> Favoriler</li>
                         <li><i class="fas fa-bell"></i> Bildirimler</li>
                         <li><i class="fas fa-cog"></i> Ayarlar</li>
@@ -47,36 +55,42 @@
             <!-- Ana İçerik -->
             <div class="main-content">
                 <section id="home" class="hero-section">
+                    <!-- Ana sayfa bölümü -->
                     <h1>Dijital Bankacılığın Geleceği</h1>
                     <p>NovaBank ile finansal işlemlerinizi güvenle yönetin</p>
                 </section>
 
                 <section id="accounts" class="accounts-section">
+                    <!-- Hesaplarım bölümü -->
                     <h2>Hesaplarım</h2>
                     <div class="account-cards">
+                        <!-- Hesap kartları için kapsayıcı -->
                         <div class="account-card">
+                            <!-- Vadesiz hesap kartı -->
                             <h3>Vadesiz Hesap</h3>
                             <p class="balance">₺23,416.90</p>
                             <p class="account-number">TR45 0006 1005 1234 5678 9012 34</p>
-                            <div class="card-actions">
+                            <div class="card-actions"> <!-- Kart üzerindeki işlem butonları -->
                                 <button class="transaction-btn">Detaylar</button>
                                 <button class="transaction-btn">Para Transferi</button>
                             </div>
                         </div>
                         <div class="account-card">
+                            <!-- Dolar hesap kartı -->
                             <h3>Dolar Hesabı</h3>
                             <p class="balance">$12,450.64</p>
                             <p class="account-number">TR45 0006 1005 1234 5678 9012 35</p>
-                            <div class="card-actions">
+                            <div class="card-actions"> <!-- Kart üzerindeki işlem butonları -->
                                 <button class="transaction-btn">Detaylar</button>
                                 <button class="transaction-btn">Para Transferi</button>
                             </div>
                         </div>
                         <div class="account-card">
+                            <!-- Euro hesap kartı -->
                             <h3>Euro Hesabı</h3>
                             <p class="balance">€1,725.43</p>
                             <p class="account-number">TR45 0006 1005 1234 5678 9012 36</p>
-                            <div class="card-actions">
+                            <div class="card-actions"> <!-- Kart üzerindeki işlem butonları -->
                                 <button class="transaction-btn">Detaylar</button>
                                 <button class="transaction-btn">Para Transferi</button>
                             </div>
@@ -85,10 +99,11 @@
                 </section>
 
                 <section id="transactions" class="quick-transactions">
+                    <!-- Hızlı işlemler bölümü -->
                     <h2>Hızlı İşlemler</h2>
-                    <div class="transaction-buttons">
-                        <button class="transaction-btn">
-                            <i class="fas fa-exchange-alt"></i>
+                    <div class="transaction-buttons"> <!-- İşlem butonları kapsayıcı -->
+                        <button class="transaction-btn"> <!-- İşlem butonları -->
+                            <i class="fas fa-exchange-alt"></i> <!-- İkon -->
                             Para Transferi
                         </button>
                         <button class="transaction-btn">
@@ -116,16 +131,19 @@
 
                 <section id="campaigns" class="campaigns-section">
                     <h2>Size Özel Kampanyalar</h2>
+                    <!-- Kampanyalar bölümü -->
                     <div class="campaign-cards">
                         <div class="campaign-card">
                             <div class="campaign-image">
                                 <img src="https://www.denizbank.com/medium/Campaign-LandingImage-1962.vsf" alt="Kredi Kampanyası">
+                                <!-- Kampanya resminin bağlantısı -->
                             </div>
-                            <div class="campaign-content">
-                                <h3>Yeni Müşteri Kredisi</h3>
+                            <div class="campaign-content"> <!-- Kampanya içeriği -->
+                                <h3>Yeni Müşteri Kredisi</h3> <!-- Kampanya başlığı -->
                                 <p>İlk kredinizde %0 faiz fırsatı!</p>
                                 <ul>
-                                    <li>12 aya varan vade</li>
+                                    <!-- Kampanya detayları -->
+                                    <li>12 aya varan vade</li> 
                                     <li>50.000 TL'ye kadar limit</li>
                                     <li>Masrafsız kullanım</li>
                                 </ul>
@@ -166,8 +184,10 @@
                 </section>
 
                 <section id="exchange" class="exchange-rates">
+                    <!-- Döviz kurları bölümü -->
                     <h2>Güncel Kurlar</h2>
                     <div class="rate-cards">
+                        <!-- Döviz kurları kartları -->
                         <div class="rate-card">
                             <h3>USD/TRY</h3>
                             <p class="rate">31.45</p>
@@ -194,13 +214,16 @@
 
             <!-- Sağ Sidebar -->
             <aside class="right-sidebar">
+                <!-- Profil bilgileri ve işlemler bölümü -->
                 <div class="profile-section">
                     <div class="profile-header">
                         <img src="https://avatars.githubusercontent.com/u/73107549?v=4" alt="Profil Foto" class="large-profile-pic">
-                        <h3>Yiğit Karakurt</h3>
+                        <!-- Profil fotoğrafı -->
+                        <h3>Yiğit Karakurt</h3> <!-- Kullanıcının adı -->
                         <p>Müşteri No: 1559126</p>
                     </div>
                     <div class="profile-stats">
+                        <!-- Kullanıcıya ait bazı finansal istatistikler -->
                         <div class="stat-item">
                             <span class="stat-label">Toplam Varlık</span>
                             <span class="stat-value">₺23,416.90</span>
@@ -215,6 +238,7 @@
                         </div>
                     </div>
                     <div class="profile-actions">
+                        <!-- Profil düzenleme ve güvenlik ayarları butonları -->
                         <button class="transaction-btn">Profili Düzenle</button>
                         <button class="transaction-btn">Güvenlik Ayarları</button>
                     </div>
@@ -222,7 +246,9 @@
 
                 <div class="recent-transactions">
                     <h4>Son 5 İşlem</h4>
+                    <!-- Kullanıcının son işlemlerinin listesi -->
                     <ul class="transaction-list">
+                        <!-- Her bir işlem için liste elemanı -->
                         <li class="transaction-item">
                             <span class="transaction-date">01 Kas 2024</span>
                             <span class="transaction-detail">Para Transferi - ₺500.00</span>
@@ -249,33 +275,40 @@
         </div>
 
         <div id="contact" class="contact-section">
+            <!-- İletişim formu bölümü -->
             <h2 class="contact-form-container">Bize Ulaşın</h2>
             <div class="contact-form-container">
                 <form class="contact-form">
                     <select name="subject" class="form-control">
+                        <!-- İletişim formu için konu seçimi -->
                         <option value="">Konu Seçiniz</option>
                         <option value="general">Genel Bilgi</option>
                         <option value="technical">Teknik Destek</option>
                         <option value="complaint">Şikayet</option>
                     </select>
                     <textarea name="message" class="form-control" rows="5" placeholder="Mesajınız"></textarea>
+                    <!-- Kullanıcının mesajını girebileceği alan -->
                     <button type="submit" class="transaction-btn">Gönder</button>
+                    <!-- Mesaj gönder butonu -->
                 </form>
             </div>
         </div>
     </main>
 
     <footer>
+        <!-- Sayfanın alt kısmındaki footer bölümü -->
         <div class="footer-content">
             <div class="footer-section">
                 <h4>NovaBank</h4>
                 <p>Dijital bankacılığın öncüsü</p>
                 <p>BDDK tarafından denetlenmektedir</p>
+                <!-- Banka hakkında bilgi ve yasal açıklamalar -->
             </div>
     
             <div class="footer-section">
                 <h4>İletişim</h4>
                 <ul class="contact-list">
+                    <!-- Banka iletişim bilgileri -->
                     <li>
                         <i class="fas fa-phone"></i>
                         0850 123 45 67
@@ -292,6 +325,7 @@
             </div>
     
             <div class="footer-section">
+                <!-- Hızlı linkler-->
                 <h4>Hızlı Linkler</h4>
                 <ul>
                     <li><a href="#home">Ana Sayfa</a></li>
@@ -313,6 +347,7 @@
     
         <div class="footer-bottom">
             <div class="social-links">
+                <!-- Sosyal medya bağlantıları -->
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>

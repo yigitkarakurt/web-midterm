@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #2ecc71;
-    --secondary-color: #27ae60;
+    /* Renkler */
+    --primary-color: #2ecc71; /* Primary Color */
+    --secondary-color: #27ae60; /* Secondary Color */
     --accent-color: #3498db;
     --text-color: #2c3e50;
     --light-bg: #f9f9f9;
@@ -8,53 +9,61 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Resetleme */
+    margin: 0; /* Margin sıfırlandı */
+    padding: 0; /* Padding sıfırlandı */
+    box-sizing: border-box; /* Kutu modelini border-box olarak ayarladık */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yazı tipi ayarlandı */
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-    color: var(--text-color);
+    /* Genel Ayarlar */
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%); /* Arka plan rengi */
+    color: var(--text-color); /* Yazı rengi */
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(to right, rgba(46, 204, 113, 0.95), rgba(39, 174, 96, 0.95));
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Header Ayarları */
+    background: linear-gradient(to right, rgba(46, 204, 113, 0.95), rgba(39, 174, 96, 0.95)); /* Arka plan rengi */
+    padding: 1rem; /* Padding ayarlandı */
+    position: sticky; /* Sabitlenmesi için */
+    top: 0; /* Üst kısma sabitlendi */
+    z-index: 1000; /* Diğer elemanların üstünde olması için */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
 }
 
+/* Navbar Styles */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
+    display: flex; /* Flexbox kullanıldı */
+    justify-content: space-between; /* Aralarında boşluk bırakıldı */
+    align-items: center; /* Dikeyde hizalandı */
+    max-width: 1400px; /* Maksimum genişlik ayarlandı */
+    margin: 0 auto; /* Ortalı hizalandı */
 }
 
+/* Logo Styles */
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: white;
+    display: flex; /* Flexbox kullanıldı */
+    align-items: center; /* Dikeyde hizalandı */
+    gap: 1rem; /* Aralarında boşluk bırakıldı */
+    color: white; /* Yazı rengi */
 }
 
+/* Navbar Links */
 .logo img {
-    height: 40px;
-    width: auto;
+    height: 40px; /* Yükseklik ayarlandı */
+    width: auto; /* Genişlik otomatik ayarlandı */
 }
 
+/* Navbar Links */
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+    display: flex; /* Flexbox kullanıldı */
+    gap: 2rem; /* Aralarında boşluk bırakıldı */
+    list-style: none; /* Liste işaretleri kaldırıldı */
 }
 
+/* Navbar Link Styles */
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -63,80 +72,87 @@ nav {
     position: relative;
 }
 
+/* Navbar Link Hover Styles */
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s ease;
+    content: ''; /* İçerik eklendi */
+    position: absolute; /* Pozisyon ayarlandı */
+    bottom: -5px;    /* Alt boşluk ayarlandı */
+    left: 0; /* Sol boşluk ayarlandı */
+    width: 0; /* Genişlik ayarlandı */
+    height: 2px; /* Yükseklik ayarlandı */ 
+    background: white; /* Arka plan rengi */
+    transition: width 0.3s ease; /* Geçiş efekti ayarlandı */
 }
 
+/* Navbar Link Hover Styles */
 .nav-links a:hover::after {
-    width: 100%;
+    width: 100%; /* Genişlik ayarlandı */
 }
 
+/* User Info Styles */
 .user-info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: white;
+    display: flex; /* Flexbox kullanıldı */
+    align-items: center; /* Dikeyde hizalandı */
+    gap: 1rem; /* Aralarında boşluk bırakıldı */
+    color: white; /* Yazı rengi */
 }
 
+/*  User Info Image Styles */
 .profile-pic {
     width: 35px;  /* Genişliği ayarladık */
     height: 35px; /* Yüksekliği ayarladık */
-    border-radius: 50%;
+    border-radius: 50%; /* Kenar yarıçapı ayarlandı */
     border: 2px solid white;
     object-fit: cover; /* Fotoğrafın oranını koruyarak kırpma yapacak */
 }
 
 /* Dashboard Layout */
 .dashboard-container {
-    display: grid;
-    grid-template-columns: 250px 1fr 300px;
-    gap: 2rem;
-    max-width: 1400px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    display: grid; /* Grid kullanıldı */
+    grid-template-columns: 250px 1fr 300px; /* Sütunlar ayarlandı */
+    gap: 2rem; /* Aralarında boşluk bırakıldı */
+    max-width: 1400px; /* Maksimum genişlik ayarlandı */
+    margin: 2rem auto; /* Ortalı hizalandı */
+    padding: 0 1rem; /* Padding ayarlandı */
 }
 
 /* Sidebar Styles */
 .left-sidebar, .right-sidebar {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    padding: 1.5rem;
-    height: fit-content;
-    position: sticky;
-    top: 100px;
-    box-shadow: var(--card-shadow);
+    background: rgba(255, 255, 255, 0.9); /* Arka plan rengi */
+    border-radius: 15px; /* Kenar yarıçapı ayarlandı */
+    padding: 1.5rem; /* Padding ayarlandı */
+    height: fit-content; /* İçeriğe göre yükseklik ayarlandı */
+    position: sticky; /* Sabitlenmesi için */
+    top: 100px; /* Üst kısma sabitlendi */
+    box-shadow: var(--card-shadow); /* Gölgelendirme */
 }
 
+/* Sidebar Links */
 .quick-actions ul {
-    list-style: none;
+    list-style: none; /* Liste işaretleri kaldırıldı */
 }
 
+/* Sidebar Link Styles */
 .quick-actions li {
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    padding: 1rem; /* Padding ayarlandı */
+    margin: 0.5rem 0; /* Dış boşluk ayarlandı */
+    border-radius: 10px; /* Kenar yarıçapı ayarlandı */ 
+    cursor: pointer; /* İmleç tipi ayarlandı */
+    transition: all 0.3s ease; /* Geçiş efekti ayarlandı */
+    display: flex; /* Flexbox kullanıldı */
+    align-items: center; /* Dikeyde hizalandı */
+    gap: 1rem; /* Aralarında boşluk bırakıldı */
 }
 
+/* Sidebar Link Hover Styles */
 .quick-actions li:hover {
-    background: rgba(46, 204, 113, 0.1);
-    transform: translateX(5px);
+    background: rgba(46, 204, 113, 0.1); /* Arka plan rengi */
+    transform: translateX(5px); /* X ekseninde kaydırma yapıldı */
 }
 
 /* Profile Section */
 .profile-section {
-    text-align: center;
+    text-align: center; /* Metin hizalandı */
 }
 
 /* Account Card ve Profile Action Butonları için */
@@ -146,197 +162,217 @@ nav {
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: var(--text-color);
-    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease; /* Geçiş efekti ayarlandı */
+    display: flex; /* Flexbox kullanıldı */
+    align-items: center; /* Dikeyde hizalandı */
+    justify-content: center; /* Yatayda hizalandı */
+    gap: 0.5rem; /* Aralarında boşluk bırakıldı */
+    text-decoration: none; /* Alt çizgi kaldırıldı */
+    color: var(--text-color); /* Yazı rengi */
+    box-shadow: var(--card-shadow);     /* Gölgelendirme */
 }
 
+/* Profile Action Butonları Hover Styles */
 .card-actions a:hover, .profile-actions a:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-3px);
+    background: var(--primary-color); /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    transform: translateY(-3px); /* Y ekseninde kaydırma yapıldı */
 }
 
 /* Card Actions Container */
 .card-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    display: grid; /* Grid kullanıldı */
+    grid-template-columns: 1fr 1fr; /* Sütunlar ayarlandı */
+    gap: 1rem; /* Aralarında boşluk bırakıldı */
+    margin-top: 1.5rem; /* Dış boşluk ayarlandı */
 }
 
 /* Profile Actions Container */
 .profile-actions {
-    display: grid;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    display: grid; /* Grid kullanıldı */
+    gap: 1rem; /* Aralarında boşluk bırakıldı */
+    margin-top: 1.5rem; 
 }
 
+/* Profile Picture Styles */
 .large-profile-pic {
-    width: 100px;
+    width: 100px; 
     height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid var(--primary-color);
+    border-radius: 50%; /* Kenar yarıçapı ayarlandı */
+    margin-bottom: 1rem; /* Dış boşluk ayarlandı */
+    border: 3px solid var(--primary-color); /* Kenar rengi ayarlandı */
 }
 
+/* Profile Name Styles */
 .profile-stats {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0; /* Dış boşluk ayarlandı */
 }
 
+/* Profile Stat Item Styles */
 .stat-item {
-    padding: 0.5rem;
-    border-bottom: 1px solid #eee;
+    padding: 0.5rem; /* Padding ayarlandı */
+    border-bottom: 1px solid #eee; /* Alt çizgi eklendi */
 }
 
 /* Main Content Sections */
 .main-content section {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); 
     border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: var(--card-shadow);
+    padding: 2rem;  /* Padding ayarlandı */
+    margin-bottom: 2rem; /* Dış boşluk ayarlandı */
+    box-shadow: var(--card-shadow); /* Gölgelendirme */
 }
 
 /* Hero Section */
 .hero-section {
-    text-align: center;
-    padding: 4rem 2rem !important;
-    background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(52, 152, 219, 0.1)) !important;
+    text-align: center; /* Metin hizalandı */
+    padding: 4rem 2rem !important; /* Padding ayarlandı */
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(52, 152, 219, 0.1)) !important; /* Arka plan rengi */
 }
 
+/* Hero Section Heading */
 .hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    animation: fadeInUp 1s ease;
+    font-size: 2.5rem; /* Font boyutu ayarlandı */
+    margin-bottom: 1rem; /* Dış boşluk ayarlandı */
+    animation: fadeInUp 1s ease; /* Animasyon eklendi */
 }
 
 /* Account Cards */
 .account-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    display: grid; /* Grid kullanıldı */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Sütunlar ayarlandı */
+    gap: 1.5rem; /* Aralarında boşluk bırakıldı */
 }
 
+/* Account Card */
 .account-card {
     background: linear-gradient(135deg, #fff, #f5f5f5);
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease;
+    padding: 1.5rem; /* Padding ayarlandı */
+    border-radius: 15px; /* Kenar yarıçapı ayarlandı */
+    box-shadow: var(--card-shadow); /* Gölgelendirme */
+    transition: transform 0.3s ease;    /* Geçiş efekti ayarlandı */
 }
 
+/* Account Card Hover Styles */
 .account-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Y ekseninde kaydırma yapıldı */
 }
 
+/* Account Card Title */
 .balance {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin: 1rem 0;
+    font-size: 1.5rem; /* Font boyutu ayarlandı */
+    font-weight: bold; /* Kalın yazı tipi ayarlandı */
+    color: var(--primary-color); /* Yazı rengi */
+    margin: 1rem 0; /* Dış boşluk ayarlandı */
 }
 
 /* Transaction Buttons */
 .transaction-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    display: grid; /* Grid kullanıldı */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Sütunlar ayarlandı */
+    gap: 1rem; 
 }
 
+/* Transaction Button Styles */
 .transaction-btn {
     background: white;
     border: none;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    transition: all 0.3s ease; /* Geçiş efekti ayarlandı */
+    display: flex; /* Flexbox kullanıldı */
+    flex-direction: column; /* Dikeyde hizalandı */
     align-items: center;
     gap: 0.5rem;
 }
 
+/* Transaction Button Hover Styles */
 .transaction-btn:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-3px);
+    background: var(--primary-color); /* Arka plan rengi */
+    color: white; 
+    transform: translateY(-3px); /* Y ekseninde kaydırma yapıldı */
 }
 
 
 /* Campaign Cards */
 .campaign-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Sütunlar ayarlandı */
+    gap: 2rem; /* Aralarında boşluk bırakıldı */
 }
 
+/* Campaign Card */
 .campaign-card {
     background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    border-radius: 15px; /* Kenar yarıçapı ayarlandı */
+    overflow: hidden; /* Taşan kısımları gizleme */
+    transition: transform 0.3s ease; /* Geçiş efekti ayarlandı */
 }
 
+/* Campaign Card Hover Styles */
 .campaign-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Y ekseninde kaydırma yapıldı */
 }
 
+/* Campaign Image */
 .campaign-image img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* Fotoğrafın oranını koruyarak kırpma yapacak */
 }
 
+/* Campaign Content */
 .campaign-content {
-    padding: 1.5rem;
+    padding: 1.5rem; /* Padding ayarlandı */
 }
 
+/* Campaign Title */
 .campaign-btn {
-    background: var(--primary-color);
+    background: var(--primary-color); 
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    cursor: pointer; /* İmleç tipi ayarlandı */
+    transition: all 0.3s ease; /* Geçiş efekti ayarlandı */
     margin-top: 1rem;
 }
 
+/* Campaign Button Hover Styles */
 .campaign-btn:hover {
-    background: var(--secondary-color);
+    background: var(--secondary-color); /* Arka plan rengi */
 }
 
 /* Exchange Rates */
 .rate-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Sütunlar ayarlandı */
     gap: 1rem;
 }
 
+/* Exchange Rate Card */
 .rate-card {
     background: white;
-    padding: 1.5rem;
+    padding: 1.5rem; /* Padding ayarlandı */
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Geçiş efekti ayarlandı */
 }
 
+/* Exchange Rate Card Hover Styles */
 .rate-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Ölçeklendirme yapıldı */
 }
 
+/* Exchange Rate Title */
 .change.positive {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Yazı rengi */
 }
 
+/* Exchange Rate Title */
 .change.negative {
-    color: #e74c3c;
+    color: #e74c3c; /* Yazı rengi */
 }
 
 /* Contact Section */
@@ -345,12 +381,13 @@ nav {
     border-radius: 15px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: var(--card-shadow);
+    box-shadow: var(--card-shadow); /* Gölgelendirme */
 }
 
+/* Contact Section Heading */
 .contact-form-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Yatayda hizalandı */
 }
 
 .contact-form {
@@ -361,24 +398,25 @@ nav {
     gap: 1rem;
 }
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+/* Contact Form Input Styles */
+.contact-form input, /* Input için */
+.contact-form select, /* Select için */
+.contact-form textarea { /* Textarea için */
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: border-color 0.3s ease;
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    border-color: var(--primary-color);
-    outline: none;
+.contact-form input:focus, /* Odaklandığında */
+.contact-form select:focus, /* Odaklandığında */
+.contact-form textarea:focus { /* Odaklandığında */
+    border-color: var(--primary-color); /* Kenar rengi ayarlandı */
+    outline: none; /* Odak çerçevesi kaldırıldı */
 }
 
 /* Recent Transactions Section */
-.recent-transactions {
+.recent-transactions { /* Son işlemler için */
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     padding: 2rem;
@@ -386,7 +424,7 @@ nav {
     box-shadow: var(--card-shadow);
 }
 
-.recent-transactions h4 {
+.recent-transactions h4 { /* Başlık için */
     font-size: 1.3rem;
     color: var(--text-color);
     margin-bottom: 1.5rem;
@@ -394,7 +432,7 @@ nav {
     padding-bottom: 0.8rem;
 }
 
-.transaction-list {
+.transaction-list { /* İşlem listesi için */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -439,28 +477,31 @@ footer {
     margin-top: 4rem;
 }
 
+/* Footer Content */
 .footer-content {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Sütunlar ayarlandı */
+    gap: 2rem; /* Aralarında boşluk bırakıldı */
 }
 
+/* Footer Logo */
 .social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: flex; /* Flexbox kullanıldı */
+    gap: 1rem; /* Aralarında boşluk bırakıldı */
+    margin-top: 1rem; /* Dış boşluk ayarlandı */
 }
 
+/* Footer Logo */
 .social-links a {
     color: white;
     font-size: 1.5rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Geçiş efekti ayarlandı */
 }
 
 .social-links a:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* Y ekseninde kaydırma yapıldı */
 }
 
 .footer-bottom {
@@ -472,61 +513,71 @@ footer {
 
 /* Animations */
 @keyframes fadeInUp {
+    /* Keyframe tanımlandı */
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        opacity: 0; /* Opaklık ayarlandı */
+        transform: translateY(20px); /* Y ekseninde kaydırma yapıldı */
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* Opaklık ayarlandı */
+        transform: translateY(0); /* Y ekseninde kaydırma yapıldı */
     }
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
+    /* 1200px'den küçük ekranlar için */
     .dashboard-container {
         grid-template-columns: 200px 1fr 250px;
     }
 }
 
+/* 992px'den küçük ekranlar için */
 @media (max-width: 992px) {
+    /* 992px'den küçük ekranlar için */
     .dashboard-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Sadece orta kısım gözükecek */
     }
     
+    /* Sidebar ve Navbar Ayarları */
     .left-sidebar, .right-sidebar {
-        position: static;
+        position: static; /* Sabitlenmesi kaldırıldı */
     }
     
+    /* Navbar Ayarları */
     .nav-links {
-        display: none;
+        display: none; /* Görünmez yapıldı */
     }
 }
 
+/* 768px'den küçük ekranlar için */
 @media (max-width: 768px) {
-    .contact-container {
-        grid-template-columns: 1fr;
+    .contact-container { /* İletişim formu için */
+        grid-template-columns: 1fr; /* Sadece bir sütun gözükecek */
     }
     
-    .hero-section h1 {
-        font-size: 2rem;
+    .hero-section h1 { /* Başlık için */
+        font-size: 2rem; /* Font boyutu ayarlandı */
     }
     
-    .account-cards {
-        grid-template-columns: 1fr;
+    .account-cards { /* Hesap kartları için */
+        grid-template-columns: 1fr; /* Sadece bir sütun gözükecek */
     }
 }
 
+/* 576px'den küçük ekranlar için */
 @media (max-width: 576px) {
     .transaction-buttons {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Sadece bir sütun gözükecek */
     }
     
+    /* Hesap kartları için */
     .campaign-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Sadece bir sütun gözükecek */
     }
     
+    /* Hesap kartları için */
     .rate-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Sadece bir sütun gözükecek */
     }
 }
