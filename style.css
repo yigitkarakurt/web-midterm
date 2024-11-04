@@ -377,6 +377,60 @@ nav {
     outline: none;
 }
 
+/* Recent Transactions Section */
+.recent-transactions {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.recent-transactions h4 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.8rem;
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #f1f1f1;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.transaction-item:last-child {
+    border-bottom: none; /* Son öğeye alt çizgi eklemiyoruz */
+}
+
+.transaction-item:hover {
+    background: rgba(46, 204, 113, 0.1);
+    transform: translateX(8px);
+    border-radius: 8px;
+}
+
+.transaction-date {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.transaction-detail {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(to right, rgba(46, 204, 113, 0.95), rgba(39, 174, 96, 0.95));
